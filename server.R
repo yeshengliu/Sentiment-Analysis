@@ -34,10 +34,10 @@ shinyServer(function(input, output, session) {
     return(text.dataframe)
   })
   GetTwitter <- eventReactive(input$button, {    # Export Twitter data
-    api_key <- "8cWxnbrcrY1bril0BOJkaPTxT"
-    api_secret <- "anXT6kfK9URiVT64cZ8Z4Gbu6UOipBSDFe2YP64WmywLbETtn4"
-    access_token <- "613928944-RDF8CwSyIOg2ku1CvW0DVOQ2rTgm8iBjrCTOPdIp"
-    access_token_secret <- "eV0fNAGuesxwxG1mgL6iAFvQB6vAptftplufXbTPd8amB"
+    api_key <- ""
+    api_secret <- ""
+    access_token <- ""
+    access_token_secret <- ""
     setup_twitter_oauth(api_key, api_secret)
     twitter.keywords <- unique(
       strsplit(input$twitter.text, ";")
